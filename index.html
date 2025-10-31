@@ -12,11 +12,22 @@
     <header class="navbar">
         <div class="container">
             <div class="logo">logo</div>
-            <nav class="menu-icon">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            
+            <nav class="navigation">
+                <div class="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <ul class="nav-dropdown">
+                    <li><a href="https://kpi.ua/">Головна</a></li>
+                    <li><a href="https://kpi.ua/about">Про нас</a></li>
+                    <li><a href="https://kpi.ua/op">Послуги</a></li>
+                    <li><a href="https://kpi.ua/contact">Контакти</a></li>
+                </ul>
             </nav>
+
         </div>
     </header>
 
@@ -40,19 +51,27 @@
                 <div class="service-grid">
 
                     <div class="service-item">
+                        <a href="./images/1.png">
                         <img src="./images/1.png" alt="лінза фотоаппарата" class="service-icon">
+                        </a>
                     </div>
 
                     <div class="service-item">
+                        <a href="./images/2.png">
                         <img src="./images/2.png" alt="дівчина з камерою" class="service-icon">
+                        </a>    
                     </div>
 
                     <div class="service-item">
+                        <a href="./images/3.png">
                         <img src="./images/3.png" alt="котик з камерою" class="service-icon">
+                        </a>
                     </div>
 
                     <div class="service-item">
+                        <a href="./images/4.png">
                         <img src="./images/4.png" alt="світанок в горах" class="service-icon">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -62,6 +81,16 @@
     <footer class="footer">
         <p>Sample text. Click to select the Text Element.</p>
     </footer>
+
+    <script>/*не певний чи потрібно біло зробити робочий випадаючий список,але я зробив :) */
+        const menuIcon = document.querySelector('.menu-icon');
+        
+        const navDropdown = document.querySelector('.nav-dropdown');
+
+        menuIcon.addEventListener('click', () => {
+            navDropdown.classList.toggle('show');
+        });
+    </script>
 
 </body>
 </html>
